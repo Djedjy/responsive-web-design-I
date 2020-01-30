@@ -69,16 +69,20 @@ body {
 	width: 90%;
 	margin: 100px;
   }
+
+  .page-container {
+      width: 90%;
+      margin: 100px;
+  }
   
   a {
 	text-decoration: none; 
   }
   
   .Navigation a {
-	color: #ddd8d7; 
+	color: #BEC1CB; 
 	margin: 40px;
-	width: 100%;
-	color: #332926;
+    width: 100%;
   }
   
   .HeaderContainer .Header {
@@ -95,7 +99,8 @@ body {
   .Header .HeaderTitle h1 {
 	font-size: 80px;
 	padding: 50px 70px 0px;
-	width: 50%; 
+    width: 100%; 
+    text-align: center; 
   }
   
   .Header .HeaderTitle button {
@@ -329,3 +334,30 @@ body {
 	margin-top: 2%; 
 }
 
+@media (max-width: 800px){
+    *{
+        background-color: aqua;
+    }
+
+    .Navigation {
+        margin-top: 40px;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Navigation .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .HeaderContainer .HeaderImage {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+}
