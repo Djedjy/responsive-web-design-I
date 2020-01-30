@@ -75,6 +75,20 @@ body {
       margin: 100px;
   }
   
+  .Navigation {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width 100%;
+    background: white;
+    overflow: hidden;
+    justify-content: space-around;
+  }
+
+  nav {
+      display: flex;
+  }
+
   a {
 	text-decoration: none; 
   }
@@ -83,6 +97,11 @@ body {
 	color: #BEC1CB; 
 	margin: 40px;
     width: 100%;
+  }
+
+  .logo {
+      margin-top: 1%;
+      margin-left: auto;
   }
   
   .HeaderContainer .Header {
@@ -347,9 +366,14 @@ body {
     }
 
     .Navigation .logo {
+       /* order: 1;*/
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .Navigation a {
+       /* order: 2  */                                                              ;
     }
 
     .HeaderContainer .HeaderImage {
