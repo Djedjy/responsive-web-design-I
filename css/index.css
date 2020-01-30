@@ -361,6 +361,7 @@ body {
     .Navigation nav {
         display: flex;
         flex-flow: wrap column; 
+        justify-content: space-evenly;
     }
 
     .logo {
@@ -387,48 +388,59 @@ body {
 
 }
 
-/*@media (max-width: 800px){
-    *{
-        background-color: aqua;
+@media (max-width: 500px){
+    .logo {
+        padding: 1% 0 1%;
+        width: 100%;
+        margin: 3% auto 3%;
+        text-align: center;
     }
 
-    .Navigation {
-        position: static;
+    .anchor-tab {
+        border-top: 2px solid grey;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
     }
 
-    .Navigation a {
+    .anchor-tab a {
+        border-bottom: 2px solid grey;
+        margin: 5% auto 2%;
+        padding-bottom: 3%;
+    }
+
+    .TopContent {
         display: flex;
-        align-items: center;
+        flex-flow: wrap column;
+        justify-content: space-evenly;
+
     }
 
-    .Navigation a .logo {
-        margin: 20px auto 0;
+    .TopContent .Features {
+        width: 100%;
     }
 
-    nav {
+    .TopContent .About {
+        width: 100%;
+    }
+
+    .BottomContent {
         display: flex;
+        flex-flow: wrap column;
         justify-content: space-evenly;
     }
 
-    .HeaderContainer .HeaderImage {
-        display: none;
+    .BottomContent .Services {
+        width: 100%;
+    }
+
+    .BottomContent .Product {
+        width: 100%;
+    }
+
+    .BottomContent .Vision {
+        width: 100%;
     }
 
 }
-
-@media (max-width: 500px) {
-    * {
-        background: pink;
-    }
-
-    .Navigation {
-        position: static;
-    }
-
-    .Navigation a .logo {
-        margin: 3% auto 3%;
-    }
-
-}*/
