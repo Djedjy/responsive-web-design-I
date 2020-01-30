@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -72,36 +71,42 @@ body {
 
   .page-container {
       width: 90%;
-      margin: 100px;
+      margin: 100px auto;
   }
   
-  .Navigation {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width 100%;
-    background: white;
-    overflow: hidden;
-    justify-content: space-around;
-  }
+.Navigation {
+    border: 2px solid red;
+    width: 100%;
+}
 
-  nav {
-      display: flex;
-  }
-
-  a {
-	text-decoration: none; 
-  }
+.anchor-tab {
+    margin-top:1%;
+    width: 80%;
+    border: 2px solid dodgerblue;
+    display: inline-block;
+}
+.anchor-tab a {
+    color: #D7E1ED; 
+    font-size: 110%;
+    margin: 5%;
+    text-decoration: none;
+    width: 100%;
+}
   
-  .Navigation a {
-	color: #BEC1CB; 
+ /* .Navigation a {
+    margin-top: 50px;
+    border: 2px solid red;
+	color: #D7E1ED; 
 	margin: 40px;
     width: 100%;
-  }
+    text-decoration: none;
+  }*/
 
   .logo {
-      margin-top: 1%;
-      margin-left: auto;
+      border: 2px solid blue;
+      margin-top: 2%;
+      width: 16%;
+      display: inline-block;
   }
   
   .HeaderContainer .Header {
@@ -118,8 +123,7 @@ body {
   .Header .HeaderTitle h1 {
 	font-size: 80px;
 	padding: 50px 70px 0px;
-    width: 100%; 
-    text-align: center; 
+	width: 50%; 
   }
   
   .Header .HeaderTitle button {
@@ -353,27 +357,29 @@ body {
 	margin-top: 2%; 
 }
 
-@media (max-width: 800px){
+/*@media (max-width: 800px){
     *{
         background-color: aqua;
     }
 
     .Navigation {
-        margin-top: 40px;
-        border: 2px solid red;
+        position: static;
         display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .Navigation .logo {
-       /* order: 1;*/
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: column-reverse;
     }
 
     .Navigation a {
-       /* order: 2  */                                                              ;
+        display: flex;
+        align-items: center;
+    }
+
+    .Navigation a .logo {
+        margin: 20px auto 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .HeaderContainer .HeaderImage {
@@ -383,5 +389,16 @@ body {
 }
 
 @media (max-width: 500px) {
+    * {
+        background: pink;
+    }
 
-}
+    .Navigation {
+        position: static;
+    }
+
+    .Navigation a .logo {
+        margin: 3% auto 3%;
+    }
+
+}*/
